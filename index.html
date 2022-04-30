@@ -63,10 +63,13 @@
            var element = document.body;
            let li = document.getElementsByClassName("link");
            element.classList.toggle("dark-mode");
-           li[0].classList.toggle("dark-mode");
-           li[1].classList.toggle("dark-mode");
-           li[2].classList.toggle("dark-mode");
-           li[3].classList.toggle("dark-mode");
+        //    li[0].classList.toggle("dark-mode");
+        //    li[1].classList.toggle("dark-mode");
+        //    li[2].classList.toggle("dark-mode");
+        //    li[3].classList.toggle("dark-mode");
+        for(let i = 0; i < li.length; i++){
+            li[i].classList.toggle("dark-mode");
+        }
         }
         </script>
         
