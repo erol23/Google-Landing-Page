@@ -11,13 +11,13 @@
 <body>
     <header class="header">
         <ul class="header__left">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Store</a></li>
+            <li><a href="#" class="link">About</a></li>
+            <li><a href="#" class="link">Store</a></li>
         </ul>
 
         <ul class="header__right">
-            <li><a href="#">Gmail</a></li>
-            <li><a href="#">Image</a></li>
+            <li><a href="#" class="link">Gmail</a></li>
+            <li><a href="#" class="link">Image</a></li>
             <li><a href="#"><img class="header__right--appicon" src="images/appicon.png" alt="Application Image"></a></li>
             <li><button class="header__right--button" type="button" name="button">Sing In</button></li>
         </ul>
@@ -39,6 +39,7 @@
 
         <div class="main__language">
             <p>Other Languages you can use Google: <a href="#">Turkish</a></p>
+            <button onclick="myFunction()">Change Mode</button>
         </div>
     </main>
 
@@ -56,5 +57,18 @@
             <li><a href="#">Settings</a></li>
         </ul>
     </footer>
+
+    <script>
+        function myFunction() {
+           var element = document.body;
+           let li = document.getElementsByClassName("link");
+           element.classList.toggle("dark-mode");
+           li[0].classList.toggle("dark-mode");
+           li[1].classList.toggle("dark-mode");
+           li[2].classList.toggle("dark-mode");
+           li[3].classList.toggle("dark-mode");
+        }
+        </script>
+        
 </body>
 </html>

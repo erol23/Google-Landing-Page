@@ -172,3 +172,8 @@ a:hover{
     margin-right: 25px;
 
 }
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
